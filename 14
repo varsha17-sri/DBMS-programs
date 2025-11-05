@@ -1,0 +1,7 @@
+INSERT INTO employees (first_name, last_name, dept, salary, hired_date) VALUES  
+('Alice','Kumar','R&D',80000,'2020-03-15'),  
+('Bob','Sharma','Sales',60000,'2019-08-01'),  
+('Carol','Kumar','R&D',85000,'2021-02-10'),  
+('Dave','Patel','Marketing',55000,'2018-11-20'),  
+('Eve','Sharma','Sales',62000,'2022-01-05'); 
+DELETE FROM employees WHERE emp_id = 4; -- delete Dave  
