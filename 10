@@ -1,0 +1,9 @@
+SELECT e.StudentID, s.StudentName, s.Major,  
+e.CourseID, c.CourseName, c.Credits, e.EnrollmentDate,  
+ci.InstructorID, i.InstructorName, i.Phone  
+FROM Enrollments e  
+JOIN Students s ON e.StudentID = s.StudentID  
+JOIN Courses c ON e.CourseID = c.CourseID  
+JOIN Course_Instructors ci ON c.CourseID = ci.CourseID  
+JOIN Instructors i ON ci.InstructorID = i.InstructorID  
+ORDER BY e.StudentID, e.CourseID, ci.InstructorID;  
