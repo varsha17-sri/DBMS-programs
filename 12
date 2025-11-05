@@ -1,0 +1,4 @@
+INSERT INTO Students VALUES (103, 'Mahesh', 'IT');  
+SAVEPOINT sp1;  
+INSERT INTO Students VALUES (104, 'Sita', 'EEE');  
+SAVEPOINT sp2; 
