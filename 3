@@ -1,0 +1,17 @@
+Source Table select * from company; companyn         amount 
+wipro 	 	5000 
+ibm 	 	8000 
+dell 	 	9000 
+wipro 	 	2000 
+dell 	 	10000 
+Select AVG(amount) from company; 
+Select SUM(amount) from company; 
+Select Max(amount) from company; 
+Select Min(amount) from company; 
+Select Count(*) from company
+select companyn,sum(amount) from company group by companyn; 
+select companyn,min(amount) from company group by companyn; 
+select companyn,max(amount) from company group by companyn; 
+select companyn,count(*) from company group by companyn; 
+ select companyn,count(*) from company group by companyn having count(*)>1;
+ select companyn,sum(amount) from company group by companyn having sum(amount)>10000; 
